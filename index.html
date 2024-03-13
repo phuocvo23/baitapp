@@ -23,6 +23,19 @@
     <div class="btn-login">
             <input class="btnlogin" type="button" name="Login" value="Đăng Nhập" onclick="checkLogin()">
     </div>
-    
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Kiểm tra tên đăng nhập và mật khẩu ở đây
+            // Ví dụ: nếu tên đăng nhập là "admin" và mật khẩu là "password" thì chuyển trang
+            if (username === "admin" && password === "123") {
+                window.location.href = "chuyentrang.html"; // Thay đổi "trang-moi.html" thành URL của trang bạn muốn chuyển đến
+            } else {
+                alert("Tên đăng nhập hoặc mật khẩu không chính xác!");
+            }
+        }
+    </script>
 </body>
 </html>      
